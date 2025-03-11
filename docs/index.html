@@ -29,7 +29,14 @@
         name: "Taro学习笔记",
         repo: "https://github.com/Zehuan-Wang/TarotNotes.git",
         loadSidebar: true,
-        subMaxLevel: 3,
+        subMaxLevel: 1,
+        // 跳转后自动到顶部
+        auto2top: true,
+        // 页面右侧toc
+        toc: {
+          tocMaxLevel: 2,
+          target: "h2, h3, h4, h5, h6",
+        },
         search: {
           paths: "auto",
           placeholder: "搜索",
@@ -59,6 +66,9 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <!-- 页面右侧 TOC -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script>
     <style>
       .content {
         overflow: auto;
